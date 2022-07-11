@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  font-family: "Mulish", sans-serif;
+}
+
+body {
+  background-color: rgb(70, 130, 180);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#block {
+  width: 375px;
+  height: 425px;
+  background-color: rgb(43, 78, 108);
+  border-radius: 10px;
+  position: relative;
+}
+
+#loginTitle {
+  width: 80%;
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  font-weight: 200;
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, -50%);
+}
+
+#email {
+  padding-bottom: 10px;
+  width: 80%;
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  /*background-color: red;*/
+  /*border-bottom: 1px solid white;*/
+}
+
+#emailText {
+  position: relative;
+  top: 0px;
+}
+
+#E,
+#m,
+#a,
+#i,
+#l {
+  position: absolute;
+}
+
+input {
+  position: relative;
+  top: -22.5px;
+  caret-color: white;
+  width: 100%;
+  border: none;
+  cursor: auto;
+  background-color: rgb(43, 78, 108);
+  display: none;
+  color: white;
+  cursor: pointer;
+  height: 30px;
+  font-size: 20px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  background-color: transparent;
+}
+
+#border-bottom {
+  width: 80%;
+  border-bottom: 1px solid white;
+
+  position: relative;
+  text-align: center;
+  top: 160px;
+
+  margin: 0 auto;
+}
