@@ -17,21 +17,36 @@
     <title>Form Input Wave</title>
   </head>
   <body>
-    <div id="block">
-      <div id="loginTitle">Please Login</div>
-      <div id="email">
-        <div id="guide">
-          <span>E</span><span>m</span><span>a</span><span>i</span><span>l</span>
-        </div>
-        <div id="emailText">
-          <span id="E">E</span><span id="m">m</span><span id="a">a</span
-          ><span id="i">i</span><span id="l">l</span>
-        </div>
+    <form onsubmit="return false;">
+      <div id="block">
+        <div id="loginTitle">Please Login</div>
 
-        <input autofocus />
+        <div id="email">
+          <div id="emailText">
+            <span id="E">E</span><span id="m">m</span><span id="a">a</span
+            ><span id="i">i</span><span id="l">l</span>
+          </div>
+
+          <input id="input1" autofocus required="required" />
+        </div>
+        <div id="border-bottom"></div>
+
+        <div id="password">
+          <div id="passwordText">
+            <span id="P">P</span><span id="a">a</span><span id="s">s</span
+            ><span id="s">s</span><span id="w">w</span><span id="o">o</span
+            ><span id="r">r</span><span id="d">d</span>
+          </div>
+
+          <input id="input2" type="password" autofocus required="required" />
+        </div>
+        <div id="border-bottom2"></div>
+
+        <button id="login" type="submit">Login</button>
+
+        <div id="description">Don't have an account? <span>Register</span></div>
       </div>
-      <div id="border-bottom"></div>
-    </div>
+    </form>
     <script
       defer
       src="/Users/michaelgalan/Desktop/SUMMER2022/FormInputWave/app.js"

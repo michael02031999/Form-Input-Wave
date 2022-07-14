@@ -18,8 +18,10 @@ body {
 
 #block {
   width: 375px;
-  height: 425px;
+  height: 450px;
+
   background-color: rgb(43, 78, 108);
+
   border-radius: 10px;
   position: relative;
 }
@@ -32,11 +34,25 @@ body {
   font-weight: 200;
   position: absolute;
   left: 50%;
-  top: 15%;
+  top: 65px;
   transform: translate(-50%, -50%);
 }
 
 #email {
+  height: 20px;
+  width: 80%;
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+  position: absolute;
+  left: 10%;
+  top: 28%;
+  /*background-color: yellow;*/
+  height: 33px;
+  /*border-bottom: 1px solid white;*/
+}
+
+#password {
   padding-bottom: 10px;
   width: 80%;
   color: white;
@@ -44,14 +60,20 @@ body {
   font-weight: 100;
   position: absolute;
   left: 10%;
-  top: 30%;
-  /*background-color: red;*/
-  /*border-bottom: 1px solid white;*/
+  top: 50%;
 }
 
 #emailText {
   position: relative;
   top: 0px;
+  height: 33px;
+}
+
+#passwordText {
+  position: relative;
+  top: 3px;
+
+  height: 40px;
 }
 
 #E,
@@ -59,18 +81,58 @@ body {
 #a,
 #i,
 #l {
-  position: absolute;
+  position: relative;
+  display: inline-block;
+  top: 0px;
+  /*animation: bounceUp 600ms ease 0ms normal both;*/
+  transition: all 0.25s;
+  z-index: 1;
+  transform: translate(0px, 0px);
 }
 
-input {
+#P,
+#a,
+#s,
+#s,
+#w,
+#o,
+#r,
+#d {
   position: relative;
-  top: -22.5px;
+  display: inline-block;
+  top: 0px;
+  /*animation: bounceUp 600ms ease 0ms normal both;*/
+  transition: all 0.25s;
+  z-index: 1;
+  transform: translate(0px, 0px);
+}
+
+#input1 {
+  position: relative;
+  top: -20.5px;
   caret-color: white;
   width: 100%;
   border: none;
   cursor: auto;
   background-color: rgb(43, 78, 108);
   display: none;
+  color: white;
+  cursor: pointer;
+  height: 30px;
+  font-size: 20px;
+}
+
+#input2 {
+  position: relative;
+  display: inline-block;
+  top: -22.5px;
+  display: none;
+  caret-color: white;
+  width: 100%;
+  border: none;
+  cursor: auto;
+  background-color: rgb(43, 78, 108);
+
   color: white;
   cursor: pointer;
   height: 30px;
@@ -94,10 +156,41 @@ textarea {
 #border-bottom {
   width: 80%;
   border-bottom: 1px solid white;
-
   position: relative;
   text-align: center;
   top: 160px;
-
   margin: 0 auto;
+}
+
+#border-bottom2 {
+  width: 80%;
+  border-bottom: 1px solid white;
+  position: relative;
+  text-align: center;
+  top: 265px;
+  margin: 0 auto;
+}
+
+#login {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  background-color: rgb(173, 217, 229);
+  padding: 20px 0px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#description {
+  position: absolute;
+  top: 88%;
+  left: 10%;
+  color: white;
+}
+
+#description span {
+  color: rgb(173, 217, 229);
 }
